@@ -25,16 +25,16 @@ function getPlayerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-    return move;
     move || getInput();
+    return move;
 }
 
 function getComputerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
-    return move;
     move || randomPlay();
+    return move;
 }
 
 function getWinner(playerMove,computerMove) {
@@ -70,29 +70,27 @@ function getWinner(playerMove,computerMove) {
                 winner ="Player";
                 break;
             default:
-                winner = "null"
+                winner = "null";
                 alert('Not an option');
         }
     }
     else if (playerMove == scissors){
         switch (computerMove){
             case rock:
-                winner = "Computer"
+                winner = "Computer";
                 break;
             case paper:
-                winner = "Player"
+                winner = "Player";
                 break;
             case scissors:
-                winner = "Tie"
+                winner = "Tie";
                 break;
             default:
-                winner = "null"
+                winner = "null";
                 alert('Not an option');
         }
     }
-
-
-    }
+    
     return winner;
 }
 

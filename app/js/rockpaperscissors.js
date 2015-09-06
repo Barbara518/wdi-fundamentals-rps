@@ -40,15 +40,15 @@ function getWinner(playerMove,computerMove) {
     // Write code that will set winner to either 'player', 'computer', or 'tie' based on the values of playerMove and computerMove.
     // Assume that the only values playerMove and computerMove can have are 'rock', 'paper', and 'scissors'.
     // The rules of the game are that 'rock' beats 'scissors', 'scissors' beats 'paper', and 'paper' beats 'rock'.
-    if (playerMove === paper){
+    if (playerMove === 'paper'){
         switch (computerMove){
-            case rock:
+            case 'rock':
                 winner = "Player";
                 break;
-            case paper:
+            case 'paper':
                 winner = "Tie";
                 break;
-            case scissors:
+            case 'scissors':
                 winner = "Computer";
                 break;
             default:
@@ -56,15 +56,15 @@ function getWinner(playerMove,computerMove) {
                 alert('Not an option');
             }
         }
-    else if (playerMove === rock){
+    else if (playerMove === 'rock'){
         switch (computerMove){
-            case rock:
+            case 'rock':
                 winner = "Tie";
                 break;
-            case paper:
+            case 'paper':
                 winner = "Computer";
                 break;
-            case scissors:
+            case 'scissors':
                 winner ="Player";
                 break;
             default:
@@ -72,15 +72,15 @@ function getWinner(playerMove,computerMove) {
                 alert('Not an option');
         }
     }
-    else if (playerMove === scissors){
+    else if (playerMove === 'scissors'){
         switch (computerMove){
-            case rock:
+            case 'rock':
                 winner = "Computer";
                 break;
-            case paper:
+            case 'paper':
                 winner = "Player";
                 break;
-            case scissors:
+            case 'scissors':
                 winner = "Tie";
                 break;
             default:

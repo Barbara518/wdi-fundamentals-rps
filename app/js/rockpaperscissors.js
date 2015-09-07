@@ -53,7 +53,6 @@ function getWinner(playerMove,computerMove) {
                 break;
             default:
                 winner = "null";
-                alert('Not an option');
             }
         }
     else if (playerMove === 'rock'){
@@ -69,7 +68,6 @@ function getWinner(playerMove,computerMove) {
                 break;
             default:
                 winner = "null";
-                alert('Not an option');
         }
     }
     else if (playerMove === 'scissors'){
@@ -85,7 +83,6 @@ function getWinner(playerMove,computerMove) {
                 break;
             default:
                 winner = "null";
-                alert('Not an option');
         }
     }
 
@@ -117,21 +114,15 @@ function playToFive() {
         else if (winner === 'Computer') {
             computerWins+=1;
         }
-        else {
-            playerWins = playerWins;
-            computerWins = computerWins;
-        }
+        
         console.log (winner + ' scores...')
         console.log('Score is ' + playerWins + ' to ' + computerWins);
     }
+
+    var winnerStatement = (playerWins > computerWins) ? "Player you won!!!" : "Computer beat you player...";
+    console.log(winnerStatement)
     
-    if (playerWins > computerWins) {
-        console.log('Player you won!');
-    }
-    else {
-        console.log('Computer beat you player...');
-    }
-    return [playerWins, computerWins];
+
 }
 playToFive();
 
